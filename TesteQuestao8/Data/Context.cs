@@ -6,12 +6,12 @@ namespace TesteQuestao8.Data
     public class Context : DbContext
 
     {
-        public Context(DbContextOptions options): base(options)
+        public Context(DbContextOptions<Context> options): base(options)
         {
 
         }
 
-        public DbSet<Cliente> CLiente { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
 
     }

@@ -1,9 +1,14 @@
-﻿namespace TesteQuestao8.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace TesteQuestao8.Models
 {
+    [Table("Cliente")]
     public class Cliente
     {
-        public int id { get; set; }
-        public string num_cliente { get; set; }
-        public string nome { get; set; }
+        [Key]
+        public int Id { get; set; }
+        public string Num_cliente { get; set; }
+        public string Nome { get; set; }
     }
 }
